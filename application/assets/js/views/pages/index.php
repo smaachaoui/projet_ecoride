@@ -22,6 +22,18 @@
 
             <section>
                 <h2> Tu cherches un chauffeur ?</h2>
+                    <form id ="searchForm">
+                        <label for="departure">Lieu de départ:</label>
+                        <input type="text" id="departure" name="departure" required>
+
+                        <label for="destination">Lieu d'arrivée:</label>
+                        <input type="text" id="destination" name="destination" required>
+
+                        <label for="date">Date:</label>
+                        <input type="date" id="date" name="date" required>
+
+                        <button type="submit" id="searchButton">Rechercher</button>
+                    </form>
             </section>
 
             <section>
