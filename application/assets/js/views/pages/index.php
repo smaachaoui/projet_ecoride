@@ -38,6 +38,23 @@
 
             <section>
                 <h3>Pourquoi choisir EcoRide ?</h3>
+
+                <div>
+                    <h4>Écologique</h4>
+                    <p>Nous privilégions les trajets en covoiturage pour réduire notre empreinte carbone.</p>
+                </div>
+
+                <div>
+                    <h4>Économique</h4>
+                    <p>Des tarifs compétitifs pour un service de qualité.</p>
+                </div>
+
+                <div>
+                    <h4>Conviviale</h4>
+                    <p>Nous favorisons les échanges entre passagers pour rendre le voyage plus agréable.</p>
+                </div>
+
+                </div>
             </section>
 
         </main>
