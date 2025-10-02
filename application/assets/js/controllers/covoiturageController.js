@@ -1,16 +1,12 @@
 // Je créer une classe pour gérer la recherche de covoiturages
 export default class CovoiturageController {
-    constructor(departure, destination, date) {
+    constructor() {
 
         // Je cible les champs du formulaire de recherche de covoiturages
         this.departure = document.getElementById('departure');
         this.destination = document.getElementById('destination');
         this.date = document.getElementById('date');
-      
-
-        console.log(this.departure);
-        console.log(this.destination);
-        console.log(this.date);
+        this.btnSearch = document.getElementById('btnSearch');
 
         this.init();
     }
@@ -19,7 +15,7 @@ export default class CovoiturageController {
     init() {
         this.departure.addEventListener('keyup', () => this.handleInputChange());
         this.destination.addEventListener('keyup', () => this.handleInputChange());
-        this.date.addEventListener('keyup', () => this.handleInputChange());
+        this.date.addEventListener('change', () => this.handleInputChange());
     }
 
     // Je gère les changements dans les champs du formulaire
@@ -32,10 +28,10 @@ export default class CovoiturageController {
        
     }
 
-    // Je créer une fonction pour rechercher les covoiturages en fonction des critères saisis
-    searchCovoiturages(departure, destination, date) {
+    // Je créer une fonction pour rechercher les covoiturages en fonction des éléments saisis
+    findCovoiturages(){
+        
         
     }
-
   
 }
