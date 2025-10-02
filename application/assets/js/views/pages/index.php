@@ -10,7 +10,7 @@
     
     <body>
         
-        <?php include 'header.html'; ?>
+        <?php include '../components/header.php'; ?>
 
         <main>
             <section>
@@ -30,7 +30,7 @@
 
         </main>
 
-        <?php include 'footer.html'; ?>
-      
+        <?php include '../components/footer.php'; ?>
+    
     </body>
 </html>
