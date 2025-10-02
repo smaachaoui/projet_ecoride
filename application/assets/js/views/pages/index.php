@@ -13,21 +13,21 @@
         <?php include '../components/header.php'; ?>
 
         <main>
-            <section>
+            <section class = "first_section">
         
                 <h1>Bienvenue sur EcoRide</h1>
                 <p>Une conduite écologique et économique</p>
                 
             </section>
 
-            <section>
+            <section class ="second_section">
                 <h2> Tu cherches un chauffeur ?</h2>
                     <form id ="searchForm">
                         <label for="departure">Lieu de départ:</label>
-                        <input type="text" id="departure" name="departure" required>
+                        <input type="text" id="departure" name="departure" placeholder = "Ville de départ" required>
 
                         <label for="destination">Lieu d'arrivée:</label>
-                        <input type="text" id="destination" name="destination" required>
+                        <input type="text" id="destination" name="destination" placeholder= "Ville d'arrivée" required>
 
                         <label for="date">Date:</label>
                         <input type="date" id="date" name="date" required>
@@ -36,7 +36,7 @@
                     </form>
             </section>
 
-            <section>
+            <section class ="third_section">
                 <h3>Pourquoi choisir EcoRide ?</h3>
 
                 <div>
