@@ -1,0 +1,269 @@
+/* IMPORTATION DE LA POLICE POPPINS */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+
+/* RÈGLES DE STYLE GLOBALE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #cef4d8;
+}
+
+
+/* APPROCHE MOBILE FIRST */
+
+
+/* RESPONSIVE DESIGN POUR LES SMARTPHONES */
+
+@media (min-width: 360px) and (max-width: 767px) {
+
+    /* STYLER LES BALISES HTML */
+
+    header {
+        padding: 2em;
+        background-color: #cef4d8;
+        border-bottom: 1px solid;
+        display: flex;
+        justify-content: space-between;
+        vertical-align: center;
+    }
+
+    nav {
+        display: none;
+    }
+
+    h1, h2, h3, h4, label {
+        padding: 0.5em;
+        text-align: center;
+    }
+
+    h1 {
+        color: white;
+    }
+
+    p, a {
+        text-align: center;
+        color: white;
+        font-size: 16px;
+    }
+    
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+        gap: 60px;
+    }
+
+    input {
+        width: 200px;
+        margin: 0.5em;
+        padding: 0.5em;
+        border-radius: 5px;
+        border: 1px solid black;
+    }
+
+    button {
+        background-color: #114b1e;
+        color: white;
+        width: 170px;
+        margin: 1em;
+        padding: 0.5em;
+        border: 1px solid black;
+        border-radius: 5px;
+    }
+
+    button:hover {
+        cursor: pointer;
+    }
+
+    footer {
+        padding: 2em;
+        background-color: #114b1e;
+    }
+
+
+    /* LES CLASSES */
+    .logo_picture {
+        width: 120px;
+        height: 120px;
+    }
+
+    .first_section {
+        background-image: url('/application/assets/img/sticker.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 40vh;
+        border-bottom: 1px solid black;
+    }
+
+    .second_section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1em;
+    }
+
+    #searchForm {
+        background-color: #23953c;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 330px;
+        border: 1px solid;
+        border-radius: 15px;
+        padding: 1.5em;
+    }
+
+    .third_section {
+        background-color: #23953c;
+        padding: 2em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .links {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+
+/* RESPONSIVE DESIGN POUR LES TABLETTES */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    /* ======= BALISES GÉNÉRALES ======= */
+    header {
+        padding: 1em;
+        background-color: #cef4d8;
+        border-bottom: 1px solid;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav {
+        padding: 0.5em;
+        display: flex;
+        align-items: center;
+    }
+
+    nav a {
+        text-decoration: none;
+        margin: 1em;
+        color: black;
+    }
+
+    h1, h2, h3, h4, label {
+        padding: 0.5em;
+        text-align: center;
+    }
+
+    h1 {
+        color: white;
+    }
+
+    p, a {
+        text-align: center;
+        color: white;
+        font-size: 16px;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+        gap: 60px;
+    }
+
+    input {
+        width: 200px;
+        margin: 0.5em;
+        padding: 0.5em;
+        border-radius: 5px;
+        border: 1px solid black;
+    }
+
+    button {
+        background-color: #114b1e;
+        color: white;
+        width: 170px;
+        margin: 1em;
+        padding: 0.5em;
+        border: 1px solid black;
+        border-radius: 5px;
+    }
+
+    button:hover {
+        cursor: pointer;
+    }
+
+    footer {
+        padding: 2em;
+        background-color: #114b1e;
+    }
+
+
+    /* LES CLASSES ET ID */
+
+    .logo_picture {
+        width: 150px;
+        height: 150px;
+    }
+
+    .first_section {
+        background-image: url('/application/assets/img/sticker.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 60vh;
+        border-bottom: 1px solid black;
+    }
+
+    .second_section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1em;
+    }
+
+    #searchForm {
+        background-color: #23953c;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 330px;
+        border: 1px solid;
+        border-radius: 15px;
+        padding: 1.5em;
+    }
+
+    .third_section {
+        background-color: #23953c;
+        padding: 1em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .links {
+        display: flex;
+        justify-content: space-between;
+    }
+}
