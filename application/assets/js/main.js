@@ -1,4 +1,4 @@
-// Importation des contrôleurs nécessaires
+// Importation des contrôleurs nécessaires pour le bon fonctionnement de l'application
 import AuthController from "./controllers/authController.js";
 import UserController from "./controllers/userController.js";
 import CovoiturageController from "./controllers/covoiturageController.js";
