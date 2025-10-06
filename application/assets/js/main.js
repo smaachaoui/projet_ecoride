@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   setupNav();
 
-  // Je détecte la page active via l’attribut data-page
+  // Je détecte la page active via l’attribut data-page que j'applique sur chaque balise body de chacune des pages.
   const page = document.body?.dataset?.page || "";
   console.log("[router] page =", page);
 
