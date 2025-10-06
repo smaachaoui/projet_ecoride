@@ -1,4 +1,4 @@
-// application/assets/js/models/userModel.js
+// Importation des données utilisateurs du fichier users.js
 import { users as seedUsers } from "../../data/users.js";
 
 // Je définis la clé utilisée pour stocker les utilisateurs dans le localStorage
