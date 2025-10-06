@@ -1,4 +1,4 @@
-EcoRide – Application front (Activité type 1)
+EcoRide – Partie front (Activité type 1)
 
 Objectif : 
 
