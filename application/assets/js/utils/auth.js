@@ -24,7 +24,7 @@ export function clearCurrentUser() {
   localStorage.removeItem(SESSION_KEY);
 }
 
-// Je vérifie si un utilisateur est actuellement connecté
+// Je vérifie si un utilisateur est actuellement connecté ici
 export function isLoggedIn() {
   return !!getCurrentUser();
 }
