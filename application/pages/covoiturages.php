@@ -15,7 +15,7 @@
     <?php include(__DIR__ . '/../components/header.php'); ?>
 
     <main class="results_section">
-      <h2>Rechercher un trajet</h2>
+      <h1>Rechercher un trajet</h1>
 
       <form id="searchForm">
         <label for="departure">Lieu de départ</label>
