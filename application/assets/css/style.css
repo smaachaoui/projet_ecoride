@@ -685,6 +685,9 @@ button {
 
   }
 
+  .results_section h1, .contact_section h1, .login_section h1, .register_section h1{
+    font-size: 25px;
+  }
 
 
   .detail-container {
@@ -814,6 +817,10 @@ button {
     margin: 0.5em;
   }
 
+  .results_section h1, .contact_section h1, .login_section h1, .register_section h1{
+    font-size: 30px;
+  }
+
 
   .section {
     padding: 1em;
@@ -895,6 +902,7 @@ button {
     margin-right: auto;
   }
 
+
   .results_container {
     grid-template-columns: 1fr 1fr;
     gap: 30px;
@@ -906,6 +914,8 @@ button {
     flex-direction: column;
     align-items: center;
   }
+
+  
 
   #homeSearchForm,
   #searchForm,
@@ -992,6 +1002,10 @@ button {
   .search_section h2{
     font-size: 30px;
     margin: 0.5em;
+  }
+
+  .results_section h1, .contact_section h1, .login_section h1, .register_section h1{
+    font-size: 35px;
   }
 
 
