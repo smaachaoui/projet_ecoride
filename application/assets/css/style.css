@@ -644,7 +644,7 @@ button {
   label {
     padding: 0.5em;
     text-align: center;
-    font-size: 13px;
+    font-size: 15px;
   }
 
   p,
@@ -654,6 +654,29 @@ button {
     font-size: 13px;
     text-decoration: none;
     padding: 1.5em;
+  }
+
+  .first_section h1{
+    padding: 0.2em;
+    font-size: 25px;
+  }
+
+  .first_section p{
+    padding: 0.2em;
+    font-size: 18px;
+  }
+
+  .second_section h2{
+    font-size: 25px;
+  }
+
+  .second_section p{
+    font-size: 17px;
+  }
+
+  .search_section h2{
+    font-size: 20px;
+    margin: 0.5em;
   }
 
   #roleForm label, input{
@@ -755,8 +778,6 @@ button {
     cursor: pointer;
   }
 
-
-  
   
 }
 
@@ -769,6 +790,30 @@ button {
     padding: 2em 1em;
     gap: 2em;
   }
+
+  .first_section h1{
+    padding: 0.2em;
+    font-size: 30px;
+  }
+
+  .first_section p{
+    padding: 0.2em;
+    font-size: 20px;
+  }
+
+  .second_section h2{
+    font-size: 30px;
+  }
+
+  .second_section p{
+    font-size: 19px;
+  }
+
+  .search_section h2{
+    font-size: 25px;
+    margin: 0.5em;
+  }
+
 
   .section {
     padding: 1em;
@@ -925,6 +970,30 @@ button {
     max-width: 600px;
     padding: 2.5em 2em;
   }
+
+  .first_section h1{
+    padding: 0.2em;
+    font-size: 35px;
+  }
+
+  .first_section p{
+    padding: 0.2em;
+    font-size: 25px;
+  }
+
+  .second_section h2{
+    font-size: 30px;
+  }
+
+  .second_section p{
+    font-size: 20px;
+  }
+
+  .search_section h2{
+    font-size: 30px;
+    margin: 0.5em;
+  }
+
 
   .section {
     padding: 1.2em;
