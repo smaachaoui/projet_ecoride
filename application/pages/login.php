@@ -13,9 +13,8 @@
     <main>
       <section class="login_section">
         <div id="loginAlert" class="alert" style="display:block"></div>
-
+           <h1>Connexion</h1>
         <form id="loginForm">
-          <h1>Connexion</h1>
 
           <label for="email">Email :</label>
           <input type="email" id="email" name="email" required>
