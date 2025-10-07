@@ -30,7 +30,7 @@
           <a href="./forgot_password.php">Mot de passe oublié ?</a>
         </p>
         <p class="auth-cta">
-          <span>Vous n'avez pas de compte ?</span> <a href="./register.php">Inscrivez-vous</a>
+          <span>Vous n'avez pas de compte ?</span><a href="./register.php">Inscrivez-vous en cliquant ici</a>
         </p>
       </section>
     </main>
