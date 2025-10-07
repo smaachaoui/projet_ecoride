@@ -763,7 +763,7 @@ button {
   }
 
   header {
-    padding: 1em;
+    padding: 0.5em;
     position: static;
   }
 
@@ -780,14 +780,14 @@ button {
     flex-direction: row;
     align-items: center;
     padding: 0.5em;
-    gap: 1em;
+    gap: 0.5em;
   }
 
   #navMenu a {
     text-decoration: none;
-    margin: 1em;
+    margin: 0.5em;
     color: black;
-    font-size: 14px;
+    font-size: 13px;
   }
 
   .logo_picture {
