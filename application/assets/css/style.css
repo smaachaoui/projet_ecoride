@@ -807,6 +807,7 @@ button {
 
   .results_container {
     grid-template-columns: 1fr 1fr;
+    gap: 30px;
   }
 
   .third_section {
@@ -926,7 +927,7 @@ button {
   }
 
   .container_card {
-    width: 400px;
+    width: 300px;
     padding: 0.5em;
     margin-left: auto;
     margin-right: auto;
@@ -934,6 +935,7 @@ button {
 
   .results_container {
     grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
   }
 
   .third_section {
