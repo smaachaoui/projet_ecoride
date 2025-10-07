@@ -713,6 +713,20 @@ button {
   #navMenu a {
     text-decoration: none;
   }
+
+  .auth-cta, .auth-cta a{
+    color: black;
+    padding: 0.8em;
+    margin: 0.5em;
+  }
+  
+  .auth-cta a {
+    cursor: pointer;
+    font-size: 13px;
+  }
+
+  
+  
 }
 
 /* ============================
@@ -829,6 +843,17 @@ button {
   #registerForm,
   #contactForm {
     width: 380px;
+  }
+
+  .auth-cta, .auth-cta a{
+    color: black;
+    padding: 0.8em;
+    margin: 0.5em;
+  }
+
+  .auth-cta a{
+    font-size: 15px;
+    cursor: pointer;
   }
 }
 
@@ -966,7 +991,18 @@ button {
   }
 
   footer {
-    padding: 3em;
+    padding: 2em;
+  }
+
+  .auth-cta, .auth-cta a{
+    color: black;
+    padding: 0.8em;
+    margin: 0.5em;
+  }
+
+  .auth-cta a{
+    font-size: 16px;
+    cursor: pointer;
   }
 }
 
