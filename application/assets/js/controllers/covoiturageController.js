@@ -188,7 +188,7 @@ export default class CovoiturageController {
       if (dep || dest || date) {
         doSearch();
       } else {
-        // 👇 Ici on affiche tous les conducteurs par défaut
+        // Ici on affiche tous les conducteurs par défaut
         this.lastResults = [...this.data];
         results.innerHTML = this.data.map(card).join("");
         console.log("[covoit] affichage par défaut de tous les conducteurs :", this.data.length);

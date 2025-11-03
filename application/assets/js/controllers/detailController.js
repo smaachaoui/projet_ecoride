@@ -62,7 +62,7 @@ export default class DetailController {
     if (noteEl) noteEl.textContent = `Note : ${note ?? "N/A"}`;
   }
 
-  // J’affiche ici les infos du trajet (lieu, date, heure, etc.)
+  // J’affiche ici les infos du trajet (lieu, date, heure)
   afficherInfosTrajet() {
     const { depart, arrivee, date, heure, places, prix, eco } = this.trajet;
 

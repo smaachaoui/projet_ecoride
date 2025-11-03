@@ -180,9 +180,9 @@ export default class UserController {
     });
   }
 
-  // Je gère le formulaire véhicule (affichage et enregistrement)
+  // Je gère le formulaire véhicule 
   
-    // Je gère le formulaire véhicule (affichage et enregistrement)
+    // Je gère le formulaire véhicule 
   _initVehiculeSection(user) {
     const form = document.getElementById("vehiculeForm");
     const list = document.getElementById("vehiculeList");
@@ -281,7 +281,7 @@ export default class UserController {
     logoutBtn.addEventListener("click", (e) => {
       e.preventDefault();
 
-      // Je vide la session (version compatible avec ton système)
+      // Je vide la session 
       clearCurrentUser();
 
       this.view.showToast("Déconnexion réussie !");

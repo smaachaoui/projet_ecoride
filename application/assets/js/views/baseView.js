@@ -11,12 +11,11 @@ export default class BaseView {
     return document.querySelector(sel);
   }
 
-  // Je sélectionne tous les éléments correspondant à un sélecteur CSS
   qsa(sel) {
     return Array.from(document.querySelectorAll(sel));
   }
 
-  // J’affiche un message temporaire à l’écran (notification)
+  // J’affiche un message temporaire à l’écran (pour une notification)
   showToast(message, type = "success") {
     const div = document.createElement("div");
     div.className = `alert ${type}`;
