@@ -18,7 +18,7 @@ export default class AuthView extends BaseView {
     });
   }
 
-  // Je relie le formulaire d’inscription et j’appelle la fonction onSubmit à la validation
+  
   bindRegister(onSubmit) {
     const form = this.get("registerForm");
     const alertBox = this.get("registerAlert");
@@ -33,7 +33,7 @@ export default class AuthView extends BaseView {
     });
   }
 
-  // Je relie le formulaire de mot de passe oublié et j’appelle la fonction onSubmit
+  
   bindForgot(onSubmit) {
     const form = this.get("forgotForm");
     if (!form) return;
@@ -46,7 +46,7 @@ export default class AuthView extends BaseView {
     });
   }
 
-  // Je relie le formulaire de réinitialisation de mot de passe et j’appelle la fonction onSubmit
+  
   bindReset(onSubmit) {
     const form = this.get("resetForm");
     if (!form) return;

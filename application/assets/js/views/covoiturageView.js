@@ -4,7 +4,7 @@ import BaseView from "./baseView.js";
 // Je crée la classe CovoiturageView pour gérer l’affichage et les interactions liées aux trajets
 export default class CovoiturageView extends BaseView {
 
-  // Je relie le formulaire de recherche de covoiturage et j’exécute la fonction onSearch à la soumission
+  // Je relie le formulaire de recherche de covoiturage et j’exécute la fonction onSearch
   bindSearch(onSearch) {
     const form = this.get("searchForm") || this.get("covoiturageForm");
     if (!form) return;

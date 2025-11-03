@@ -29,7 +29,7 @@ export default class AuthController {
       if (email === adminData.email && password === adminData.password) {
         setCurrentUser({ id: 0, role: "Admin" });
         if (alertBox) {
-          alertBox.textContent = "Connexion admin réussie ✅";
+          alertBox.textContent = "Connexion admin réussie ";
           alertBox.className = "alert success";
         }
         const target = location.pathname.includes("/pages/")
@@ -46,7 +46,7 @@ export default class AuthController {
       if (employe) {
         setCurrentUser({ id: employe.id, role: "Employé" });
         if (alertBox) {
-          alertBox.textContent = "Connexion employé réussie ✅";
+          alertBox.textContent = "Connexion employé réussie ";
           alertBox.className = "alert success";
         }
         const target = location.pathname.includes("/pages/")
@@ -122,7 +122,7 @@ export default class AuthController {
         const val = pwd?.value || "";
         const { score } = validatePassword(val, { email: email?.value, pseudo: pseudo?.value });
         if (meter) meter.value = score;
-        if (hint) hint.textContent = score >= 4 ? "Mot de passe fort ✅" : "Renforcez votre mot de passe";
+        if (hint) hint.textContent = score >= 4 ? "Mot de passe fort " : "Renforcez votre mot de passe";
       };
       if (pwd) pwd.addEventListener("input", update);
       if (email) email.addEventListener("input", update);

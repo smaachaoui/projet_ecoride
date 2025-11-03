@@ -14,7 +14,7 @@ export default class AdminController {
     this.renderUsers();          // J’affiche les utilisateurs et employés
     this.setupCreateEmployee();  // Je gère la création d’un nouvel employé
 
-    // Je gère la déconnexion de l’administrateur (Vue + Contrôleur)
+    // Je gère la déconnexion de l’administrateur 
     const logoutBtn = document.getElementById("logoutBtn");
     if (logoutBtn) {
       logoutBtn.addEventListener("click", () => {
@@ -90,7 +90,7 @@ export default class AdminController {
       });
     });
 
-    // Je gère la suspension ou réactivation d’un utilisateur (Contrôleur)
+    // Je gère la suspension ou réactivation d’un utilisateur 
     tbody.querySelectorAll("button[data-suspend]").forEach(btn => {
       btn.addEventListener("click", () => {
         const id = Number(btn.dataset.suspend);
@@ -105,7 +105,7 @@ export default class AdminController {
     });
   }
 
-  // Je gère le formulaire de création d’un nouvel employé (Vue + Contrôleur)
+  // Je gère le formulaire de création d’un nouvel employé 
   setupCreateEmployee() {
     const form = document.getElementById("createEmployeeForm");
     const alertBox = document.getElementById("createEmpAlert");

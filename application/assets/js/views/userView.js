@@ -70,7 +70,7 @@ export default class UserView extends BaseView {
     });
   }
 
-  // J’affiche un message visuel temporaire pour informer l’utilisateur (toast)
+  // J’affiche un message visuel temporaire pour informer l’utilisateur 
   showToast(message) {
     const toast = document.createElement("div");
     toast.className = "notify notify-success";

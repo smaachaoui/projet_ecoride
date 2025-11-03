@@ -14,12 +14,12 @@ export function getCurrentUser() {
   }
 }
 
-// J’enregistre les informations de l’utilisateur dans le localStorage (connexion)
+// J’enregistre les informations de l’utilisateur dans le localStorage ( pour la connexion)
 export function setCurrentUser(user) {
   localStorage.setItem(SESSION_KEY, JSON.stringify(user));
 }
 
-// Je supprime les informations de l’utilisateur stockées (déconnexion)
+// Je supprime les informations de l’utilisateur stockées ( pour la déconnexion)
 export function clearCurrentUser() {
   localStorage.removeItem(SESSION_KEY);
 }
