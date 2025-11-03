@@ -44,8 +44,26 @@ US et fichiers liés (activité type 1)
 Utilisation rapide
 1. J’ouvre `application/pages/index.php` dans un navigateur.
 2. Je recherche un covoiturage (ville + date) et j’affiche les résultats.
+Quelques exemples : 
+- Paris -> Lille -> 10/10/2025
+- Lyon -> Marseille -> 11/10/2025
+- Paris -> Bordeaux -> 12/10/2025
 3. Je consulte un détail, je participe (si connecté), puis je vois/annule la réservation dans mon profil.
 4. Les espaces Employé/Admin sont accessibles selon le rôle connecté.
+
+5. Je fournis plusieurs jeux d’identifiants pour tester les différents rôles disponibles.
+
+Administrateur :
+Email : admin@ecoride.fr / Mot de passe : Adminécolo10*
+
+Utilisateur :
+Email : hugo@ecoride.fr / Mot de passe : hugo123
+Email : test@ecoride.fr / Mot de passe : Formationstudi123*
+Email : alice@ecoride.fr / Mot de passe : alice123
+
+Employé :
+Email : sarah@ecoride.fr / Mot de passe : sarah123
+Email : nina@ecoride.fr / Mot de passe : nina123
 
 Remarque
 Il s'agit uniquement de la partie front de l'application : je simule la persistance via le localStorage pour démontrer le fonctionnement complet dans le navigateur.
