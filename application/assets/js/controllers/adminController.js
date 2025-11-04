@@ -1,4 +1,4 @@
-// Importation des modèles nécessaires
+// J'importe les modèles nécessaires
 import TrajetModel from "../models/trajetModel.js";
 import UserModel from "../models/userModel.js";
 
@@ -11,12 +11,12 @@ export default class AdminController {
     console.log("[admin] Initialisation du tableau de bord");
 
     this.updateDailyStatistics();       // Je mets à jour les statistiques quotidiennes
-    this.displayUserTable();            // J’affiche la liste des utilisateurs et employés
+    this.displayUserTable();            // Je affiche la liste des utilisateurs et employés
     this.handleEmployeeCreationForm();  // Je gère la création d’un nouvel employé
     this.handleAdminLogout();           // Je gère la déconnexion
   }
 
-  // Gère la déconnexion de l’administrateur 
+  // Je gère la déconnexion de l’administrateur 
   handleAdminLogout() {
     const logoutButton = document.getElementById("logoutBtn");
     if (!logoutButton) return;
@@ -45,7 +45,7 @@ export default class AdminController {
     if (creditsCountElement) creditsCountElement.textContent = `${totalCredits.toFixed(2)} crédits`;
   }
 
-  // J’affiche tous les utilisateurs et employés dans un tableau 
+  // J'affiche tous les utilisateurs et employés dans un tableau 
   displayUserTable() {
     const tableBody = document.querySelector("#adminUsers tbody");
     if (!tableBody) return;
@@ -78,14 +78,14 @@ export default class AdminController {
       </tr>
     `).join("");
 
-    // Gestion du changement de rôle
+    // Je gère les événements de changement de rôle
     this.handleRoleChangeEvents(tableBody);
 
-    // Gestion de la suspension/réactivation
+    // Je gère la suspension ou la réactivation des utilisateurs
     this.handleBanToggleEvents(tableBody);
   }
 
-  // Gère les événements de modification des rôles
+  // Je gère les événements de modification des rôles
   handleRoleChangeEvents(tableBody) {
     tableBody.querySelectorAll("select[data-role]").forEach(select => {
       select.addEventListener("change", () => {
@@ -96,7 +96,7 @@ export default class AdminController {
     });
   }
 
-  // Gère les événements de suspension/réactivation d’un utilisateur
+  // Je gère la suspension ou la réactivation d’un utilisateur
   handleBanToggleEvents(tableBody) {
     tableBody.querySelectorAll("button[data-toggle-ban]").forEach(button => {
       button.addEventListener("click", () => {
@@ -106,7 +106,7 @@ export default class AdminController {
     });
   }
 
-  // Met à jour le rôle d’un utilisateur dans le stockage
+  // Je mets à jour le rôle d’un utilisateur dans le stockage
   updateUserRoleInStorage(userId, newRole) {
     const users = UserModel.getAll();
     const userIndex = users.findIndex(user => Number(user.id) === userId);
@@ -117,7 +117,7 @@ export default class AdminController {
     this.displayUserTable();
   }
 
-  // Bascule le statut de suspension d’un utilisateur
+  // Je bascule le statut de suspension d’un utilisateur
   toggleUserBanStatusInStorage(userId) {
     const users = UserModel.getAll();
     const userIndex = users.findIndex(user => Number(user.id) === userId);
@@ -128,7 +128,7 @@ export default class AdminController {
     this.displayUserTable();
   }
 
-  // Gestion du formulaire et création d’un nouvel employé 
+  // Je gère le formulaire de création d’un nouvel employé 
   handleEmployeeCreationForm() {
     const form = document.getElementById("createEmployeeForm");
     const alertBox = document.getElementById("createEmpAlert");
@@ -141,7 +141,7 @@ export default class AdminController {
       const email = document.getElementById("empEmail")?.value.trim();
       const password = document.getElementById("empPwd")?.value.trim();
 
-      // Vérifie que tous les champs sont remplis
+      // Je vérifie que tous les champs sont remplis
       if (!pseudo || !email || !password) {
         this.showAlertMessage(alertBox, "Tous les champs sont obligatoires.", "error");
         return;
@@ -149,14 +149,14 @@ export default class AdminController {
 
       const users = UserModel.getAll();
 
-      // Vérifie si l’email est déjà utilisé
+      // Je vérifie si l’email est déjà utilisé
       const emailExists = users.some(u => u.email.toLowerCase() === email.toLowerCase());
       if (emailExists) {
         this.showAlertMessage(alertBox, "Cet email est déjà utilisé.", "error");
         return;
       }
 
-      // Crée le nouvel employé
+      // Je crée le nouvel employé
       const newEmployee = {
         id: users.length ? Math.max(...users.map(u => Number(u.id))) + 1 : 1,
         pseudo,
@@ -175,14 +175,14 @@ export default class AdminController {
       form.reset();
       this.displayUserTable();
 
-      // Masque le message après quelques secondes
+      // Je masque le message après quelques secondes
       setTimeout(() => {
         if (alertBox) alertBox.style.display = "none";
       }, 3000);
     });
   }
 
-  // Affiche une alerte d’erreur ou de succès
+  // J'affiche une alerte d’erreur ou de succès
   showAlertMessage(alertBox, message, type) {
     if (!alertBox) return;
     alertBox.className = `alert ${type}`;
